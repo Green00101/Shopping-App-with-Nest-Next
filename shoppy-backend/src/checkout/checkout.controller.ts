@@ -15,7 +15,6 @@ export class CheckoutController {
 
   @Post('webhook')
   async handleCheckoutWebhooks(@Body() event: any) {
-    console.log('1111111111111111111111111');
     return this.checkoutService.handleCheckoutWebhook(event);
   }
 }

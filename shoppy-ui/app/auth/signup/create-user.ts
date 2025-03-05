@@ -1,8 +1,8 @@
 "use server";
 
-import { redirect } from "next/navigation";
-import { FormResponse } from "@/app/common/interfaces/form-error.interface";
+import { FormResponse } from "@/app/common/interfaces/form-response.interface";
 import { post } from "@/app/common/util/fetch";
+import { redirect } from "next/navigation";
 
 export default async function createUser(
   _prevState: FormResponse,
